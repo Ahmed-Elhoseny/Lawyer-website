@@ -181,6 +181,7 @@ nav a:hover {
   font-size: 48px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
 
 .p-section2 {
@@ -190,6 +191,7 @@ nav a:hover {
   margin-top: 24px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
 
 .section2-button {
@@ -538,6 +540,7 @@ nav a:hover {
   }
   .container6, .container2, .container3, .container4, .client-comments {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
   .client-comments{
     grid-template-columns: 1fr;
@@ -573,7 +576,6 @@ nav a:hover {
   .containr1 p, .p-section2{
     font-size: 1rem;
   }
-
   .form{
     display: grid;
     grid-template-columns: 1fr;
