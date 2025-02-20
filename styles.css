@@ -368,7 +368,7 @@ nav a:hover {
 
 .the-comment {
   display: flex;
-  width: 268px;
+  max-width: 268px;
   min-height: 61px;
   margin-top: 32px;
 }
@@ -557,6 +557,17 @@ nav a:hover {
     display: block;
     width: 100%;
   }
+  .primary-navigation {
+    order: 3;
+  }
+  
+  .nav-button {
+    order: 2;
+  }
+  
+  .logo {
+    order: 1;
+  }
 }
 @media (max-width: 600px) {
   .quick-links {
@@ -581,5 +592,10 @@ nav a:hover {
     grid-template-columns: 1fr;
     width: auto;
     height: auto;
+  }
+}
+@media (max-width: 315px) {
+  header, header.nav-in-ar{
+    padding: 10px;
   }
 }
