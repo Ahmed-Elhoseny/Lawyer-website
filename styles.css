@@ -163,7 +163,15 @@ nav a:hover {
   color: black;
 }
 
-.container2 {
+.container2-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  margin: 112px auto;
+}
+
+.container2-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
@@ -519,10 +527,15 @@ nav a:hover {
   margin: 5px 0;
 }
 
-.socialmedia-icons img {
+.icons-in-en {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+}
+.icons-in-ar {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .socialmedia-icons h1 {
@@ -538,7 +551,7 @@ nav a:hover {
   .hideOnMobile{
     display: none;
   }
-  .container6, .container2, .container3, .container4, .client-comments {
+  .container6, .container2-1, .container2-2, .container3, .container4, .client-comments {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -567,6 +580,13 @@ nav a:hover {
   
   .logo {
     order: 1;
+  }
+
+  .container2-2 .text {
+    order: 1;
+  }
+  .container2-2 .lawyer-img {
+    order: 2;
   }
 }
 @media (max-width: 600px) {
